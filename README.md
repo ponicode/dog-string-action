@@ -49,10 +49,10 @@ Here is an example of what to put in your `.github/workflows/ponicode.yml` file 
 name: Ponicode DogString
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -91,7 +91,7 @@ jobs:
             <img alt="Ponicode Logo" src="https://avatars0.githubusercontent.com/u/49948625?s=200&v=4=200zx" width="100"/>
 ```
 
-**This YAML file writes docstrings on your undocumented Python functions everytime you push on master, commits them to the branch `ponicode-dogstring` and makes a Pull Request for you.**
+**This YAML file writes docstrings on your undocumented Python functions everytime you push on main, commits them to the branch `ponicode-dogstring` and makes a Pull Request for you.**
 
 ## Step 2: Add your Ponicode token to github secrets
 
@@ -127,7 +127,7 @@ That's it! Once this is done, the action will be triggered on every push.
 name: Ponicode DogString
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
     branches: [custom]
@@ -169,16 +169,16 @@ jobs:
             <img alt="Ponicode Logo" src="https://avatars0.githubusercontent.com/u/49948625?s=200&v=4=200zx" width="100"/>
 ```
 
-### Trigger Ponicode action when you push on `master` or when you make a pull request on `custom` branch
+### Trigger Ponicode action when you push on `main` or when you make a pull request on `custom` branch
 
 ```yaml
 name: Ponicode DogString
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
     branches: [custom]
 
@@ -219,16 +219,16 @@ jobs:
             <img alt="Ponicode Logo" src="https://avatars0.githubusercontent.com/u/49948625?s=200&v=4=200zx" width="100"/>
 ```
 
-### Trigger Ponicode action only on your last committed files (all_repo = False) when you push on `master`
+### Trigger Ponicode action only on your last committed files (all_repo = False) when you push on `main`
 
 ```yaml
 name: Ponicode DogString
 
 # Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
+# events but only for the main branch
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
